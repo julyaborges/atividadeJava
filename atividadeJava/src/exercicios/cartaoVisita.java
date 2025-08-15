@@ -72,8 +72,8 @@ public class cartaoVisita {
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
 		
-		JMenu mnNewMenu = new JMenu("Arquivo");
-		menuBar.add(mnNewMenu);
+		JMenu menu = new JMenu("Arquivo");
+		menuBar.add(menu);
 		
 		JMenuItem menuCartao = new JMenuItem("Abrir Cartão de Visita");
 		menuCartao.addActionListener(new ActionListener() {
@@ -83,7 +83,7 @@ public class cartaoVisita {
 			}
 		});
 		menuCartao.setSelected(true);
-		mnNewMenu.add(menuCartao);
+		menu.add(menuCartao);
 		
 		JMenu mnNewMenu_1 = new JMenu("Ajuda");
 		menuBar.add(mnNewMenu_1);
@@ -159,6 +159,16 @@ public class cartaoVisita {
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Selecione uma cor para a Tabela", "Rosa", "Amarelo", "Vermelho", "Azul"}));
 		comboBox.setBounds(353, 126, 218, 22);
 		panel.add(comboBox);
+		
+		JMenuItem menuMensagem = new JMenuItem("Abrir Mensagem");
+		menuMensagem.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String mensagem = "Você recebeu uma mensagem!";
+				JOptionPane.showMessageDialog(null, mensagem);
+			}
+		});
+		menuMensagem.setBounds(0, 33, 137, 26);
+		menu.add(menuMensagem);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));

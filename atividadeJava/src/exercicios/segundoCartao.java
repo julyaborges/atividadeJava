@@ -93,8 +93,7 @@ public class segundoCartao extends JDialog {
 				JButton okButton = new JButton("OK");
 				okButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						
-
+						dispose();
 					}
 				});
 				okButton.setActionCommand("OK");
