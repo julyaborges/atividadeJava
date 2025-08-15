@@ -61,19 +61,19 @@ public class segundoCartao extends JDialog {
 		
 		JLabel lblTenhoAnos = new JLabel("Tenho 19 anos e vivo em Joinville.");
 		lblTenhoAnos.setForeground(Color.WHITE);
-		lblTenhoAnos.setFont(new Font("Franklin Gothic Medium", Font.BOLD | Font.ITALIC, 17));
+		lblTenhoAnos.setFont(new Font("Franklin Gothic Medium", Font.ITALIC, 17));
 		lblTenhoAnos.setBounds(20, 58, 484, 20);
 		contentPanel.add(lblTenhoAnos);
 		
 		JLabel lblSouEstudanteE = new JLabel("Sou estudante de desenvolvimento de sistemas");
 		lblSouEstudanteE.setForeground(Color.WHITE);
-		lblSouEstudanteE.setFont(new Font("Franklin Gothic Medium", Font.BOLD | Font.ITALIC, 17));
+		lblSouEstudanteE.setFont(new Font("Franklin Gothic Medium", Font.ITALIC, 17));
 		lblSouEstudanteE.setBounds(20, 89, 484, 20);
 		contentPanel.add(lblSouEstudanteE);
 		
 		JLabel lblAmoLerE = new JLabel("Amo ler e adoro aprender \r\ncoisas novas!!!!");
 		lblAmoLerE.setForeground(Color.WHITE);
-		lblAmoLerE.setFont(new Font("Franklin Gothic Medium", Font.BOLD | Font.ITALIC, 17));
+		lblAmoLerE.setFont(new Font("Franklin Gothic Medium", Font.ITALIC, 17));
 		lblAmoLerE.setBounds(20, 120, 371, 20);
 		contentPanel.add(lblAmoLerE);
 		

@@ -66,10 +66,12 @@ public class cartaoVisita {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(226, 192, 221));
 		frame.setBounds(100, 100, 596, 567);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JMenuBar menuBar = new JMenuBar();
+		menuBar.setBackground(new Color(255, 128, 192));
 		frame.setJMenuBar(menuBar);
 		
 		JMenu menu = new JMenu("Arquivo");
@@ -84,12 +86,10 @@ public class cartaoVisita {
 		});
 		menuCartao.setSelected(true);
 		menu.add(menuCartao);
-		
-		JMenu mnNewMenu_1 = new JMenu("Ajuda");
-		menuBar.add(mnNewMenu_1);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
+		panel.setBackground(new Color(226, 192, 221));
 		panel.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		panel.setBounds(0, 0, 581, 159);
 		frame.getContentPane().add(panel);
@@ -105,6 +105,8 @@ public class cartaoVisita {
 		txtMensagem.setColumns(10);
 		
 		JButton btMensagem = new JButton("Mostra Mensagem");
+		btMensagem.setBackground(new Color(255, 128, 192));
+		btMensagem.setForeground(new Color(31, 31, 31));
 		btMensagem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String mensagem = txtMensagem.getText();
@@ -139,6 +141,8 @@ public class cartaoVisita {
 		panel.add(scrollPane);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setBackground(new Color(255, 128, 192));
+		comboBox.setForeground(new Color(31, 31, 31));
 		comboBox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(comboBox.getSelectedItem() == "Rosa"){
@@ -171,6 +175,7 @@ public class cartaoVisita {
 		menu.add(menuMensagem);
 		
 		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(226, 192, 221));
 		panel_1.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		panel_1.setBounds(0, 128, 581, 306);
 		frame.getContentPane().add(panel_1);
@@ -189,6 +194,8 @@ public class cartaoVisita {
 		panel_1.add(ckbCd);
 		
 		JButton btItens = new JButton("Itens Selecionados");
+		btItens.setBackground(new Color(255, 128, 192));
+		btItens.setForeground(new Color(31, 31, 31));
 		btItens.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				StringBuilder selecionados = new StringBuilder("Você marcou:\n");
@@ -229,6 +236,8 @@ public class cartaoVisita {
 		panel_1.add(list_1);
 		
 		JButton btConfirma = new JButton("Confirma");
+		btConfirma.setBackground(new Color(255, 128, 192));
+		btConfirma.setForeground(new Color(31, 31, 31));
 		btConfirma.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				DefaultListModel dlm = new DefaultListModel();
@@ -263,6 +272,8 @@ public class cartaoVisita {
 		panel_1.add(list_2);
 		
 		JButton btInserir = new JButton("Inserir");
+		btInserir.setBackground(new Color(255, 128, 192));
+		btInserir.setForeground(new Color(31, 31, 31));
 		btInserir.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
 		        
@@ -275,11 +286,11 @@ public class cartaoVisita {
 		        }
 
 		        list.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
-		        for (Object item : list.getSelectedValuesList()) {
+		        /*for (Object item : list.getSelectedValuesList()) {
 		            if (!dlm.contains(item.toString())) {
 		                dlm.addElement(item.toString());
 		            }
-		        }
+		        }*/
 
 		        if (rbtFeminino.isSelected()) {
 		            dlm.removeElement("Masculino"); // garante que Masculino some
@@ -300,6 +311,8 @@ public class cartaoVisita {
 		panel_1.add(btInserir);
 		
 		JButton btnSair = new JButton("Sair");
+		btnSair.setBackground(new Color(255, 128, 192));
+		btnSair.setForeground(new Color(31, 31, 31));
 		btnSair.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
